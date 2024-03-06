@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap");
+
 *,
 *:before,
 *:after {
@@ -11,12 +12,14 @@ html {
   font-size: 10px;
 }
 
-html, body {
+html,
+body {
   height: 100vh;
   width: 100vw;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Optional: Hide overflow content */
+  overflow: hidden;
+  /* Optional: Hide overflow content */
 }
 
 
@@ -63,9 +66,10 @@ section {
   margin: auto;
   margin-left: auto;
   margin-right: auto;
-  width: 80%; /* Adjust the width as needed */
+  width: 80%;
+  /* Adjust the width as needed */
 
-  
+
 }
 
 .w-120 {
@@ -105,9 +109,12 @@ header {
 }
 
 .header__logo-text {
-  margin-left: 10px; /* Adjust as needed */
-  font-size: 15px; /* Adjust as needed */
-  font-weight: bold; /* Adjust as needed */
+  margin-left: 10px;
+  /* Adjust as needed */
+  font-size: 15px;
+  /* Adjust as needed */
+  font-weight: bold;
+  /* Adjust as needed */
   color: #000000;
   position: relative;
   align-content: center;
@@ -116,15 +123,17 @@ header {
 .header__logo img {
   max-width: 30rem;
   transition: transform 0.3s ease;
-  margin-left:10%;
+  margin-left: 10%;
 }
 
 .header__logo-text {
-  margin-left: 10px; /* Adjust spacing between logo and text */
+  margin-left: 10px;
+  /* Adjust spacing between logo and text */
 }
 
 .header__logo.scrolled img {
-  transform: scale(0.8); /* Adjust the scale factor as needed */
+  transform: scale(0.8);
+  /* Adjust the scale factor as needed */
 }
 
 .header__nav__content {
@@ -143,7 +152,7 @@ header {
   display: flex;
   grid-gap: 2.5rem;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   margin-left: 50%;
 }
 
@@ -226,7 +235,7 @@ header {
   width: 2rem;
   height: 2rem;
   display: flex;
-  grid-row-gap: .2rem;
+  grid-row-gap: 0.2rem;
   flex-wrap: wrap;
   align-items: center;
   position: relative;
@@ -247,7 +256,8 @@ header {
   display: none;
 }
 
-.nav-close-icon:before, .nav-close-icon:after {
+.nav-close-icon:before,
+.nav-close-icon:after {
   position: absolute;
   content: '';
   width: 4px;
@@ -268,7 +278,6 @@ header {
 /*End Hero */
 .hero {
   margin: auto;
-  height: 100vh;
 }
 
 .hero__content {
@@ -472,10 +481,12 @@ header {
 
 .invest__item {
   padding: 2.5rem;
+  background-position: center;
+  background-size: cover;
 }
 
 .invest__item:nth-child(1) {
-  background-color: rgba(255, 255, 255, 0.1); 
+  background-color: rgba(255, 255, 255, 0.1);
   background: url("../img/investments/invest-1.png") no-repeat center/cover;
 }
 
@@ -629,7 +640,8 @@ header {
   animation: progressBarStepAnimate 0.5s linear forwards;
 }
 
-.progressbar__step:not(:first-child)::before, .progressbar__step:not(:first-child)::after {
+.progressbar__step:not(:first-child)::before,
+.progressbar__step:not(:first-child)::after {
   position: absolute;
   content: '';
   right: 100%;
@@ -715,7 +727,8 @@ header {
   position: relative;
 }
 
-.testimonials__body::before, .testimonials__body::after {
+.testimonials__body::before,
+.testimonials__body::after {
   position: absolute;
   content: '';
   top: 0;
@@ -941,10 +954,11 @@ header {
 
 .email {
   display: block;
-  margin-top: 10px; /* Adjust as needed */
+  margin-top: 10px;
+  /* Adjust as needed */
 }
 
-.footer__contact > * {
+.footer__contact>* {
   max-width: 16rem;
 }
 
@@ -1018,7 +1032,7 @@ header {
   text-align: center;
   margin-right: 16%;
   margin-top: auto;
-  
+
 }
 
 
@@ -1027,17 +1041,19 @@ header {
   bottom: 0;
   right: -1.5rem;
   max-width: 40rem;
-  width: auto;;
+  width: auto;
   z-index: -1;
 }
 
 /*End Footer*/
 @media screen and (max-width: 950px) {
+
   /*Header */
   .hamburger-menu-wrap,
   .nav-close-icon {
     display: block;
   }
+
   .header__nav__content {
     flex: initial;
     align-items: initial;
@@ -1051,95 +1067,167 @@ header {
     flex-direction: column;
     transform: translateX(40rem);
     transition: transform 0.3s ease-in-out;
-    grid-gap: 2.5rem;
   }
+
   .header__menu {
+    flex: 4;
     flex-direction: column;
-    flex: initial;
-    align-items: center;
+    display: flex;
+    grid-gap: 2.5rem;
+    justify-content: center;
+    margin-left: 5%;
   }
+
   .menu__link {
     color: #ffffff;
   }
-  .menu__link:hover, .menu__link.active {
+
+  .menu__link:hover,
+  .menu__link.active {
     color: #ffffff;
   }
+
   .header__signup {
     flex: initial;
     justify-content: center;
   }
+
   /*End Header */
   /*Hero */
   .hero__content {
     justify-content: center;
     text-align: center;
-    background-image:"assets\img\background_image.png";
+    background-image: "assets\img\background_image.png";
   }
+
   .hero__img {
     display: none;
   }
+
   /*End Hero */
   /*Testimonials*/
   .testimonial {
     width: 50%;
   }
+
+  .w-105 {
+    max-width: 27rem;
+  }
+
   /*End Testimonials*/
 }
 
 @media screen and (max-width: 768px) {
+
   /* Opportunities*/
   .opportunity {
     width: 100%;
   }
+
   /*End Opportunities*/
   /*How Is Works*/
   .form_progressbar {
     grid-column-gap: 7rem;
     justify-content: center;
   }
+
   .progressbar__step {
     width: 4.8rem;
     height: 4.8rem;
   }
-  .progressbar__step:not(:first-child)::before, .progressbar__step:not(:first-child)::after {
+
+  .progressbar__step:not(:first-child)::before,
+  .progressbar__step:not(:first-child)::after {
     width: 7rem;
   }
+
   .works__step__content {
     flex-direction: column;
   }
+
   .works__step_title {
     font-size: 2rem;
     text-align: center;
   }
+
   /*End How Is Works*/
   /*Testimonials*/
-  .testimonials__body::before, .testimonials__body::after {
+  .testimonials__body::before,
+  .testimonials__body::after {
     background-color: transparent;
   }
+
   .testimonials__list {
     padding-left: 1.5rem;
   }
+
   .testimonial {
     width: calc(100% - 3rem);
     word-wrap: break-word;
   }
+
   .testimonial:hover {
     transform: initial;
   }
+
   /*End Testimonials*/
   /*Footer*/
   .footer_nav__menu {
     text-align: center;
   }
+
   .footer__bottom__content {
     flex-direction: column;
     grid-row-gap: 4.5rem;
     align-items: center;
   }
+
+  .w-105 {
+    max-width: 27rem;
+  }
+
+  .invest__body {
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-gap: 1.5rem;
+  }
+
+  .invest__item {
+    padding: 1.5rem;
+    background-size: contain;
+  }
+
+  .invest__item__subtitle::after {
+    top: 2rem;
+    width: 4rem;
+  }
+
+  .invest__item__subtitle {
+    top: 27px;
+  }
+
+  .one {
+    top: 45px;
+  }
+
+  .invest__item__title {
+    font-size: 2.6rem;
+    max-width: 25rem;
+  }
+
+  .invest__item_description {
+    font-size: 1.4rem;
+    max-width: 25rem;
+  }
+
+  .btn__invest {
+    width: 15rem;
+  }
+
   /*end Footer*/
 }
 
 @media screen and (max-width: 500px) {
+
   /*Global*/
   .opportunities__title,
   .invest__title,
@@ -1148,96 +1236,118 @@ header {
   .farm-invest__title {
     font-size: 3rem;
   }
+
   .invest__description,
   .works__description {
     font-size: 1.6rem;
   }
+
   /*End Global*/
   /*Hero*/
   .hero__title {
     font-size: 3.2rem;
   }
+
   /*End Hero*/
   /*Opportunities*/
   .opportunities__img {
     top: -8rem;
   }
+
   .opportunities__img img {
     max-height: 40rem;
     max-width: 10rem;
   }
+
   .opportunity__icon {
     width: inherit;
   }
+
   /*End Opportunities*/
   /*Invest Section*/
   .invest__body {
     grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
   }
+
   .invest__item__title {
     font-size: 2.4rem;
   }
+
   /*End Invest Section*/
   /*How Is Works*/
   .form_progressbar {
     grid-column-gap: 4rem;
     justify-content: center;
   }
+
   .progressbar__step {
     width: 4.8rem;
     height: 4.8rem;
   }
-  .progressbar__step:not(:first-child)::before, .progressbar__step:not(:first-child)::after {
+
+  .progressbar__step:not(:first-child)::before,
+  .progressbar__step:not(:first-child)::after {
     width: 4rem;
   }
+
   .works__step_title {
     font-size: 1.8rem;
   }
+
   /*End How Is Works*/
   /*Testimonials*/
   .testimonials {
     margin-top: 10rem;
   }
+
   /*End Testimonials*/
   /*Footer*/
   .footer_nav__menu {
     text-align: left;
   }
+
   .footer__contact {
     width: 100%;
     text-align: center;
   }
+
   /*End Footer*/
 }
 
 @media screen and (max-width: 360px) {
+
   /*Invest Section*/
   .invest__body {
     grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   }
+
   /*End Invest Section*/
   /*How Is Works*/
   .progressbar__step {
     width: 4rem;
     height: 4rem;
   }
+
   /*End How Is Works*/
   /*Testimonials */
   .testimonial__profile {
     flex-direction: column;
     text-align: center;
   }
+
   /*End Testimonials*/
   /*Farm Invest*/
   .btn__farm--invest {
     width: 80%;
     min-width: initial;
   }
+
   /*End Farm Invest*/
 }
+
 /*# sourceMappingURL=main.css.map */
 
-.footer__logos{
+.footer__logos {
   width: 20%;
 }
 
@@ -1248,12 +1358,13 @@ header {
 
 @keyframes slideInLeft {
   from {
-      transform: translateX(-100%);
-      opacity: 0;
+    transform: translateX(-100%);
+    opacity: 0;
   }
+
   to {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -1264,12 +1375,13 @@ header {
 
 @keyframes slideInRight {
   from {
-      transform: translateX(100%);
-      opacity: 0;
+    transform: translateX(100%);
+    opacity: 0;
   }
+
   to {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -1280,32 +1392,35 @@ header {
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
+    opacity: 0;
   }
+
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @keyframes slideIn {
   from {
-      opacity: 0;
-      transform: translateY(-50px);
+    opacity: 0;
+    transform: translateY(-50px);
   }
+
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @keyframes slideIn {
   from {
-      opacity: 0;
-      transform: translateY(-50px);
+    opacity: 0;
+    transform: translateY(-50px);
   }
+
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -1316,7 +1431,8 @@ header {
 }
 
 .opportunities__content.active.w-105 {
-  animation: none; /* Disable animation when already visible */
+  animation: none;
+  /* Disable animation when already visible */
   opacity: 1;
   transform: translateY(0);
 }
@@ -1337,13 +1453,15 @@ header {
   height: 60px;
   bottom: 40px;
   right: 40px;
-  background-color: #25d366; /* WhatsApp green color */
+  background-color: #25d366;
+  /* WhatsApp green color */
   color: #fff;
   border-radius: 50%;
   text-align: center;
   font-size: 24px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  z-index: 1000; /* Ensure it's above other elements */
+  z-index: 1000;
+  /* Ensure it's above other elements */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1351,5 +1469,6 @@ header {
 }
 
 .floating-whatsapp:hover {
-  transform: scale(1.1); /* Scale up slightly on hover */
+  transform: scale(1.1);
+  /* Scale up slightly on hover */
 }
