@@ -1224,6 +1224,29 @@ header {
   }
 
   /*end Footer*/
+  .email {
+    color: #ffffff;
+    margin-left: 0%;
+  }
+  .footer__contact > * {
+    max-width: unset;
+}
+.footer__logos {
+  width: 30%;
+  text-align: center;
+}
+.footer__logos img {
+  margin: 0%;
+  text-align: center;
+  width: 50%;
+}
+.footer_copyright {
+  color: #94b2a2;
+  font-size: 1 rem;
+  text-align: center;
+ margin-right: 0%; 
+  margin-top: auto;
+}
 }
 
 @media screen and (max-width: 500px) {
@@ -1261,6 +1284,7 @@ header {
 
   .opportunity__icon {
     width: inherit;
+    margin: auto;
   }
 
   /*End Opportunities*/
@@ -1314,6 +1338,8 @@ header {
   /*End Footer*/
 }
 
+
+
 @media screen and (max-width: 360px) {
 
   /*Invest Section*/
@@ -1343,6 +1369,7 @@ header {
   }
 
   /*End Farm Invest*/
+
 }
 
 /*# sourceMappingURL=main.css.map */
